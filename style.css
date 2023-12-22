@@ -37,12 +37,12 @@ a.button {
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: 200ms;
-	color: #222;
-	background-color: #ddd;
-	cursor: pointer;
 }
 
 a.button:hover {
+	color: #222;
+	background-color: #ddd;
+	cursor: pointer;
 }
 
 section {
