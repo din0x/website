@@ -19,15 +19,26 @@ body {
 }
 
 a {
-	color: #ddd;
+	/* color: hsl(274, 37%, 47%); */
+	color: #ccc;
 	font-weight: bold;
-	text-decoration: underline 2px;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline 3px;
+	cursor: pointer;
+}
+
+.button-container {
+	margin: 10px 0;
 }
 
 a.button {
 	display: inline-block;
 	padding: 5px 20px;
 	border: 2px solid #666;
+	color: #ddd;
 	border-radius: 8px;
 	background: #222;
 	font-size: 22px;
@@ -44,6 +55,17 @@ a.button:hover {
 	border: 2px solid #ddd;
 }
 
+a.primary {
+	color: #222;
+	background-color: #ddd;
+	border: 2px solid #ddd;
+}
+
+a.primary:hover {
+	background-color: #bbb;
+	border: 2px solid #bbb;
+}
+
 section {
 	height: 100%;
 }
@@ -52,17 +74,14 @@ section {
 	position: relative;
 	top: 50%;
 	left: 50%;
+	max-width: 600px;
 	transform: translate(-50%, -50%);
 	text-align: center;
 }
 
 #greetings {
-	margin: 0 0 20px 0;
 	font-family: DM Mono, monospace, sans-serif;
-}
-
-#about .center {
-	max-width: 500px;
+	margin-bottom: 20px;
 }
 
 #background {
@@ -76,10 +95,6 @@ section {
 	z-index: -1;
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
-
 .point {
 	position: absolute;
 	width: 30px;
@@ -87,6 +102,10 @@ section {
 	background-color: hsla(0, 100%, 50%, 0.144);
 	border-radius: 50px;
 	z-index: -1;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 :root {
