@@ -1,0 +1,95 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	position: absolute;
+	color: #ddd;
+	width: 100%;
+	height: 100%;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	font-size: 22px;
+	font-family: Poppins, Arial, sans-serif;
+}
+
+a {
+	color: #ddd;
+	font-weight: bold;
+	text-decoration: underline 2px;
+}
+
+a.button {
+	display: inline-block;
+	padding: 5px 20px;
+	border: 2px solid #ddd;
+	border-radius: 8px;
+	color: inherit;
+	background: #222;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 200ms;
+	color: #222;
+	background-color: #ddd;
+	cursor: pointer;
+}
+
+a.button:hover {
+}
+
+section {
+	height: 100%;
+}
+
+.center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#greetings {
+	margin: 0 0 20px 0;
+	font-family: DM Mono, monospace, sans-serif;
+}
+
+#about .center {
+	max-width: 500px;
+}
+
+#background {
+	position: absolute;
+	background: var(--gradient);
+	background-color: #242424;
+	top: 0;
+	width: 100%;
+	height: 200%;
+	overflow: hidden;
+	z-index: -1;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.point {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: hsla(0, 100%, 50%, 0.144);
+	border-radius: 50px;
+	z-index: -1;
+}
+
+:root {
+	--gradient: radial-gradient(ellipse at top left, #222222, transparent) no-repeat, radial-gradient(ellipse at bottom right, #262626, transparent) no-repeat;
+}
