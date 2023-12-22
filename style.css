@@ -27,9 +27,8 @@ a {
 a.button {
 	display: inline-block;
 	padding: 5px 20px;
-	border: 2px solid #ddd;
+	border: 2px solid #666;
 	border-radius: 8px;
-	color: inherit;
 	background: #222;
 	font-size: 22px;
 	font-weight: bold;
@@ -42,7 +41,7 @@ a.button {
 a.button:hover {
 	color: #222;
 	background-color: #ddd;
-	cursor: pointer;
+	border: 2px solid #ddd;
 }
 
 section {
