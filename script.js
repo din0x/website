@@ -25,16 +25,14 @@ function setupBackground() {
 	const autoDestroyTime = 10
 	const hueStep = 0.35
 	let background = document.getElementById("background")
-	let count = 0
 	let hue = 0
 
 	setInterval(() => {
-		if (count <= 0) {
+		if (background.childElementCount <= 0) {
 			return
 		}
 
 		background.removeChild(background.firstChild)
-		count--
 	}, autoDestroyTime)
 
 	window.addEventListener("mousemove", (event) => {
@@ -49,9 +47,8 @@ function setupBackground() {
 		hue += hueStep
 		hue %= 360
 
-		if (count > maxCount) {
+		if (background.childElementCount > maxCount) {
 			background.removeChild(background.firstChild)
-			count--
 		}
 	})
 }
