@@ -42,7 +42,6 @@ function setupBackground() {
 		let point = fromHTML(`<div class="point" style="left: ${left}px; top: ${top}px; background-color: hsla(${hue}, 35%, 50%, 0.125"></div>`)
 
 		background.appendChild(point)
-		count++
 
 		hue += hueStep
 		hue %= 360
