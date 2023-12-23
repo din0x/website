@@ -19,10 +19,10 @@ body {
 }
 
 a {
-	/* color: hsl(274, 37%, 47%); */
 	color: #ccc;
 	font-weight: bold;
 	text-decoration: none;
+	-webkit-tap-highlight-color: transparent;
 }
 
 a:hover {
