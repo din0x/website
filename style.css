@@ -19,7 +19,7 @@ body {
 }
 
 a {
-	color: #ccc;
+	color: #44817f;
 	font-weight: bold;
 	text-decoration: none;
 	-webkit-tap-highlight-color: transparent;
@@ -79,8 +79,11 @@ section {
 	text-align: center;
 }
 
-#greetings {
+.mono {
 	font-family: DM Mono, monospace, sans-serif;
+}
+
+#greetings {
 	margin-bottom: 20px;
 }
 
