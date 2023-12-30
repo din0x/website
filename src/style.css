@@ -27,7 +27,7 @@ nav a {
 	color: #ddd;
 	margin: 0 25px;
 	padding: 0 5px;
-	border-bottom: 2px solid transparent;
+	border-bottom: 3px solid transparent;
 	text-decoration: none;
 	font-family: DM Mono, monospace, sans-serif;
 	font-weight: bold;
@@ -37,27 +37,28 @@ nav a {
 nav a:hover {
 	text-decoration: none;
 	color: #bbb;
+	border-bottom: 3px solid var(--primary);
 }
 
 nav a.active {
-	color: var(--primary100);
-	border-bottom: 2px solid #814446;
+	color: #bbb;
+	border-bottom: 3px solid var(--primary);
 }
 
 nav a.active:hover {
-	color: var(--primary200);
-	border-bottom: 2px solid #6b383a;
+	color: #bbb;
+	border-bottom: 3px solid var(--primary-darker);
 }
 
 a {
-	color: var(--primary100);
+	color: var(--primary);
 	text-decoration: none;
 	-webkit-tap-highlight-color: transparent;
 	transition: 200ms;
 }
 
 a:hover {
-	color: var(--primary200);
+	color: var(--primary-darker);
 	text-decoration: underline 2px;
 	cursor: pointer;
 }
@@ -110,12 +111,12 @@ section {
 	margin: 10px;
 	padding: 15px;
 	background-color: #2d2d2d;
-	border-right: 3px solid var(--primary100);
+	border-right: 3px solid var(--primary);
 	text-align: left;
 }
 
 .container:last-of-type {
-	border-bottom: 3px solid var(--primary100);
+	border-bottom: 3px solid var(--primary);
 }
 
 .center {
@@ -157,6 +158,6 @@ section {
 }
 
 :root {
-	--primary100: #549694;
-	--primary200: #467c7a;
+	--primary: hsl(103, 35%, 56%);
+	--primary-darker: hsl(103, 28%, 40%);
 }
