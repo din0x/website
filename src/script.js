@@ -8,6 +8,11 @@ function setupGreetings() {
 	const message = "Greetings, I am Robert"
 	const speed = 150
 	let greetings = document.getElementById("greetings")
+	if (greetings == null) {
+		console.warn("Couldn't find greetings element.")
+		return
+	}
+
 	let progress = 0
 
 	let interval = setInterval(() => {
@@ -25,6 +30,11 @@ function setupBackground() {
 	const autoDestroyTime = 10
 	const hueStep = 0.35
 	let background = document.getElementById("background")
+	if (background == null) {
+		console.warn("Couldn't find background.")
+		return
+	}
+
 	let hue = 0
 
 	setInterval(() => {
