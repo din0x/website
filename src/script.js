@@ -49,7 +49,9 @@ function setupBackground() {
 		const top = event.clientY + document.documentElement.scrollTop - 15
 		const left = event.clientX - 15
 
-		let point = fromHTML(`<div class="point" style="left: ${left}px; top: ${top}px; background-color: hsla(${hue}, 35%, 50%, 0.125"></div>`)
+		// let color = `hsla(${hue}, 35%, 50%, 0.125)`
+		let color = `hsla(103, 35%, 56%, 0.125)`
+		let point = fromHTML(`<div class="point" style="left: ${left}px; top: ${top}px; background-color: ${color}"></div>`)
 
 		background.appendChild(point)
 
