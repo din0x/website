@@ -64,7 +64,39 @@ function setupBackground() {
 	})
 }
 
+function setupFadeIn() {
+	const speed = 75
+	const start = 20
+	const step = 2
+	let top = start
+	let opacity = 0
+
+	let elements = document.getElementsByClassName("fade-in")
+
+	for (let i = 0; i < elements.length; i++) {
+		elements[i].style.top = `${top * (i + 1)}px`
+		elements[i].style.opacity = `${opacity}`
+	}
+
+	let interval = setInterval(() => {
+		top -= step
+
+		if (opacity < 100) {
+			opacity += step / start
+		}
+		if (top <= 0) {
+			clearInterval(interval)
+		}
+
+		for (let i = 0; i < elements.length; i++) {
+			elements[i].style.opacity = `${opacity}`
+			elements[i].style.top = `${top * (i + 1)}px`
+		}
+	}, speed)
+}
+
 window.onload = () => {
 	setupGreetings()
 	setupBackground()
+	setupFadeIn()
 }

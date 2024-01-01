@@ -157,6 +157,12 @@ section {
 	z-index: -1;
 }
 
+.fade-in {
+	position: relative;
+	opacity: 0;
+	transition: top 200ms, opacity 200ms;
+}
+
 :root {
 	--primary: hsl(103, 35%, 56%);
 	--primary-darker: hsl(103, 28%, 40%);
