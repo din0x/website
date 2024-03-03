@@ -75,8 +75,8 @@ function setupBackground() {
 		const top = event.clientY + document.documentElement.scrollTop;
 		const left = event.clientX;
 
-		let color = `hsla(${hue}, 35%, 50%, 0.125)`;
-		// let color = `hsla(103, 35%, 56%, 0.125)`
+		// let color = `hsla(${hue}, 35%, 50%, 0.125)`;
+		let color = `hsla(103, 35%, 56%, 0.125)`
 
 		drawLine(lastX, lastY, left, top, color);
 
