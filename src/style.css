@@ -83,9 +83,9 @@ a.button {
 }
 
 a.button:hover {
-	color: #222;
-	background-color: #ddd;
-	border: 2px solid #ddd;
+	color: #bbb;
+	background-color: #2b2b2b;
+	border: 2px solid #777;
 }
 
 a.primary {
@@ -95,6 +95,7 @@ a.primary {
 }
 
 a.primary:hover {
+	color: #222;
 	background-color: #bbb;
 	border: 2px solid #bbb;
 }
